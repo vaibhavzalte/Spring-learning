@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:p="http://www.springframework.org/schema/p"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
                            https://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context
                            https://www.springframework.org/schema/context/spring-context.xsd">
 
-  <!-- Example bean definition -->
-  <bean id="student1" class="com.uv.myProject.Student">
-  
-  <property name="studentId">
-  	<value>2204</value>
-  </property>
-  
-  <property name="studentName">
-  	<value>vaibhav</value>
-  </property>
-  
-  <property name="address">
-  <value>manmad</value>
-  </property>
-    <!-- bean properties can be set here -->
-  </bean>
+	<!-- Example bean definition -->
+	<!--  value as attribute  -->
+	<bean id="student1" class="com.uv.myProject.Student">
 
+		<property name="studentId" value="2204" />
+
+
+		<property name="studentName" value="vaibhav"/>
+			
+		<property name="address" value="manmad"/>
+			
+		<!-- bean properties can be set here -->
+	</bean>
+
+		<!--  Second bean -->
+		<!--  p schema -->
+	<bean id="student2" class="com.uv.myProject.Student" p:studentId="5" p:studentName="ram" p:address="nashik" />
+
+	
 </beans>
