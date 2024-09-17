@@ -11,15 +11,15 @@
 
 
 
-	<bean class="com.uv.autowiring.usingXml.Address" name="address">
+	<bean class="com.uv.autowiring.usingXml.Address" name="address" >
 		<property name="street" value="mahdev mandir"></property>
 		<property name="post" value="vadgoan"></property>
 	</bean>
-	
-	<bean class="com.uv.autowiring.usingXml.Emp" name="emp1" autowire="constructor"/>
+
+	<bean class="com.uv.autowiring.usingXml.Emp" name="emp1" autowire="constructor" scope="prototype"/>
 <!--  	<bean class="com.uv.autowiring.Emp" name="emp1" autowire="byType"/> -->
 	<!-- <bean class="com.uv.autowiring.Emp" name="emp1" autowire="byName"/> -->
-		
+
 
 
 

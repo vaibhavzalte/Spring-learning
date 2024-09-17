@@ -12,8 +12,11 @@ public class test {
 		ApplicationContext context=new ClassPathXmlApplicationContext("com/uv/autowiring/usingXml/config.xml") ;
 
 		Emp e1=(Emp)context.getBean("emp1");
+		Emp e2=(Emp)context.getBean("emp1");
 
 		System.out.println(e1);
+		System.out.println(e1.hashCode());
+		System.out.println(e2.hashCode());
 
 	}
 
