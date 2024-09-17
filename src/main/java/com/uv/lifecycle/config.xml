@@ -8,12 +8,18 @@
                            http://www.springframework.org/schema/context
                            https://www.springframework.org/schema/context/spring-context.xsd">
 
+	<context:annotation-config/>
+
 	<bean class="com.uv.lifecycle.Samosa" name="samosa1" init-method="init" destroy-method="destroy">
 		<property name="price" value="10" />
 	</bean>
 
 	<bean class="com.uv.lifecycle.Pepsi" name="pepsi1" >
 		<property name="price" value="12" />
+	</bean>
+
+	<bean class="com.uv.lifecycle.Mango" name="mango1" >
+		<property name="price" value="50" />
 	</bean>
 
 

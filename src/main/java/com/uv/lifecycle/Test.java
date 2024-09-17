@@ -20,6 +20,9 @@ public class Test {
 
 		System.out.println(p1);
 
+		Mango mg=(Mango)context.getBean("mango1");
+		System.out.println(mg);
+
 	}
 
 }
