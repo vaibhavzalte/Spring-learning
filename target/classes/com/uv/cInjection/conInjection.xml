@@ -3,20 +3,35 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
                            https://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context
                            https://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean class="com.uv.lifecycle.Samosa" name="samosa1" init-method="init" destroy-method="destroy">
-		<property name="price" value="10" />
-	</bean>
-
-	<bean class="com.uv.lifecycle.Pepsi" name="pepsi1" >
-		<property name="price" value="12" />
-	</bean>
 
 
+<bean class="com.uv.cInjection.Person" name="person1" c:id="7876" c:name="vaibhav"/>
+
+<!-- step2
+<bean class="com.uv.cInjection.Person" name="person1">
+	<constructor-arg value="7876" type="int" />
+
+	<constructor-arg value="ram"/>
+
+</bean>
+ -->
+<!--  1 way
+<bean class="com.uv.cInjection.Person" name="person1">
+	<constructor-arg >
+	 <value>7878</value>
+	</constructor-arg>
+
+	<constructor-arg>
+	 <value>vaibhav</value>
+	</constructor-arg>
+</bean>
+ -->
 
 
 

@@ -10,10 +10,15 @@ public class Test {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/uv/lifecycle/config.xml");
 
 		Samosa s1 = (Samosa) context.getBean("samosa1");
-		
+
 		System.out.println(s1);
-		
+
 		context.registerShutdownHook();
+
+		//method 2 using interface
+		Pepsi p1 = (Pepsi) context.getBean("pepsi1");
+
+		System.out.println(p1);
 
 	}
 
