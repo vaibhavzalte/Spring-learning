@@ -1,4 +1,4 @@
-package com.uv.autowiring;
+package com.uv.autowiring.usingXml;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,11 +9,11 @@ public class test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ApplicationContext context=new ClassPathXmlApplicationContext("com/uv/autowiring/config.xml") ;
+		ApplicationContext context=new ClassPathXmlApplicationContext("com/uv/autowiring/usingXml/config.xml") ;
 
-		Emp emp1=(Emp)context.getBean("emp1");
+		Emp e1=(Emp)context.getBean("emp1");
 
-		System.out.println(emp1);
+		System.out.println(e1);
 
 	}
 

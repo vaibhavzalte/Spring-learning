@@ -1,4 +1,4 @@
-package com.uv.autowiring;
+package com.uv.autowiring.usingXml;
 
 public class Emp {
 	private Address address;

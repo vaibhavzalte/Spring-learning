@@ -1,9 +1,11 @@
 package com.uv.autowiring.usingAnnotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Emp {
 	@Autowired
+	@Qualifier("addr2")
 	private Address address;
 
 	public Emp() {
