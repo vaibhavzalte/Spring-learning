@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class Student {
 	@Value("sai")
 	private String name;
-	@Value("3")
+	@Value("#{T(java.lang.Math).sqrt(25)}")
 	private int rollno;
 	@Value("#{mylist}")
 	private List<String> friends;
